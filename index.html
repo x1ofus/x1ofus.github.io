@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <script type="text/javascript">
+            function changeColor()
+            {
+                let title = document.getElementById("title");
+                var randColor = Math.floor(Math.random()*16777215).toString(16);
+    
+                title.style.color = "#" + randColor;
+            }
+    
+            setInterval(changeColor, 250);
+        </script>
+
+        <h1 id=title><center>Webpage</center></h1>
+    </header>
+
+    <br><br><br>
+
+    <body>
+        <center><iframe src="https://example.com" style="width: 500px; height: 250px;"></iframe></center>
+    </body>
+</html>
